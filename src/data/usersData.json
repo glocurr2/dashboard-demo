@@ -1,0 +1,134 @@
+[
+  {
+    "id": 123,
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zipCode": "90210",
+    "country": "USA",
+    "registrationDate": "2024-01-15"
+  },
+  {
+    "id": 456,
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com",
+    "street": "456 Oak Ave",
+    "city": "Otherville",
+    "state": "NY",
+    "zipCode": "10001",
+    "country": "USA",
+    "registrationDate": "2023-11-20"
+  },
+  {
+    "id": 127,
+    "name": "Eveline Mack",
+    "email": "eveline.mack@example.com",
+    "street": "20 Finder Street",
+    "city": "Anytown",
+    "state": "MI",
+    "zipCode": "45211",
+    "country": "USA",
+    "registrationDate": "2024-01-15"
+  },
+  {
+    "id": 326,
+    "name": "Vince Maffin",
+    "email": "vince.maffin@example.com",
+    "street": "23 Meter Ave",
+    "city": "Lefttown",
+    "state": "PA",
+    "zipCode": "23018",
+    "country": "USA",
+    "registrationDate": "2021-09-04"
+  },
+  {
+    "id": 327,
+    "name": "Nya Kohler",
+    "email": "nya.kohler@example.com",
+    "street": "34 Termindor Street",
+    "city": "Delvin",
+    "state": "VA",
+    "zipCode": "23211",
+    "country": "USA",
+    "registrationDate": "2024-01-15"
+  },
+  {
+    "id": 328,
+    "name": "Joe Runolfsson",
+    "email": "jrunolfsson@example.com",
+    "street": "1000 Elevor Road",
+    "city": "Palm Beach",
+    "state": "FL",
+    "zipCode": "41012",
+    "country": "USA",
+    "registrationDate": "2022-11-02"
+  },
+  {
+    "id": 331,
+    "name": "Alfonso Huel",
+    "email": "al.huel@example.com",
+    "street": "2 End Road",
+    "city": "Haverstown",
+    "state": "HI",
+    "zipCode": "97800",
+    "country": "USA",
+    "registrationDate": "2024-06-21"
+  },
+  {
+    "id": 338,
+    "name": "Eugenia Morrow",
+    "email": "eugeniam@example.com",
+    "street": "391 Gamble Street",
+    "city": "Dallas",
+    "state": "TX",
+    "zipCode": "55570",
+    "country": "USA",
+    "registrationDate": "2021-04-04"
+  },
+  {
+    "id": 340,
+    "name": "Jordy Greenholt",
+    "email": "jordy.greenholt@example.com",
+    "street": "2 Old Cannon Road",
+    "city": "Chicago",
+    "state": "IL",
+    "zipCode": "77120",
+    "country": "USA",
+    "registrationDate": "2024-06-21"
+  },
+  {
+    "id": 332,
+    "name": "Earlene Thompson",
+    "email": "earlenet@example.com",
+    "street": "1492 Northwest Ave",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zipCode": "65512",
+    "country": "USA",
+    "registrationDate": "2024-07-12"
+  },
+  {
+    "id": 351,
+    "name": "Jordy Greenholt",
+    "email": "jordy.greenholt@example.com",
+    "street": "2 Old Cannon Road",
+    "city": "Chicago",
+    "state": "IL",
+    "zipCode": "77120",
+    "country": "USA",
+    "registrationDate": "2025-02-20"
+  },
+  {
+    "id": 365,
+    "name": "Earlene Thompson",
+    "email": "earlenet@example.com",
+    "street": "101 12th Ave",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "08734",
+    "country": "USA",
+    "registrationDate": "2025-03-10"
+  }
+]

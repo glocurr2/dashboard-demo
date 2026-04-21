@@ -1,0 +1,292 @@
+[
+    {
+        "id": 0,
+        "month": "JAN",
+        "year" : 2024,
+        "sessions": 13500
+    },
+    {
+        "id": 1,
+        "month": "FEB",
+        "year" : 2024,
+        "sessions": 20200
+    },
+     {
+        "id": 2,
+        "month": "MAR",
+        "year" : 2024,
+        "sessions": 19200
+    },
+    {
+        "id": 3,
+        "month": "APRIL",
+        "year" : 2024,
+        "sessions": 12500
+     },
+     {
+        "id": 4,
+        "month": "MAY",
+        "year" : 2024,
+        "sessions": 18500
+    },
+    {
+        "id": 5,
+        "month": "JUNE",
+        "year" : 2024,
+        "sessions": 17800
+    },
+    {
+        "id": 6,
+        "month": "JULY",
+        "year" : 2024,
+        "sessions": 21600
+    },
+    {
+        "id": 7,
+        "month": "AUG",
+        "year" : 2024,
+        "sessions": 19200
+    },
+    {
+        "id": 8,
+        "month": "SEPT",
+        "year" : 2024,
+        "sessions": 23000
+    },
+    {
+        "id": 9,
+        "month": "OCT",
+        "year" : 2024,
+        "sessions": 21200
+    },
+     {
+        "id": 10,
+        "month": "NOV",
+        "year" : 2024,
+        "sessions": 11100
+    },
+    {
+        "id": 11,
+        "month": "DEC",
+        "year" : 2024,
+        "sessions": 9500
+    },
+    {
+        "id": 12,
+        "month": "JAN",
+        "year" : 2025,
+        "sessions": 9800
+    },
+    {
+        "id": 13,
+        "month": "FEB",
+        "year" : 2025,
+        "sessions": 12200
+    },
+     {
+        "id": 14,
+        "month": "MAR",
+        "year" : 2025,
+        "sessions": 18500
+    },
+    {
+        "id": 15,
+        "month": "APRIL",
+        "year" : 2025,
+        "sessions": 17200
+     },
+     {
+        "id": 16,
+        "month": "MAY",
+        "year" : 2025,
+        "sessions": 14900
+    },
+    {
+        "id": 17,
+        "month": "JUNE",
+        "year" : 2025,
+        "sessions": 13800
+    },
+    {
+        "id": 18,
+        "month": "JULY",
+        "year" : 2025,
+        "sessions": 22100
+    },
+    {
+        "id": 19,
+        "month": "AUG",
+        "year" : 2025,
+        "sessions": 14200
+    },
+    {
+        "id": 20,
+        "month": "SEPT",
+        "year" : 2025,
+        "sessions": 10600
+    },
+    {
+        "id": 21,
+        "month": "OCT",
+        "year" : 2025,
+        "sessions": 15200
+    },
+     {
+        "id": 22,
+        "month": "NOV",
+        "year" : 2025,
+        "sessions": 16100
+    },
+    {
+        "id": 23,
+        "month": "DEC",
+        "year" : 2025,
+        "sessions": 16500
+    },
+     {
+        "id": 24,
+        "month": "JAN",
+        "year" : 2026,
+        "sessions": 12400
+    },
+    {
+        "id": 25,
+        "month": "FEB",
+        "year" : 2026,
+        "sessions": 11230
+    },
+     {
+        "id": 26,
+        "month": "MAR",
+        "year" : 2026,
+        "sessions": 13700
+    },
+    {
+        "id": 27,
+        "month": "APRIL",
+        "year" : 2026,
+        "sessions": 31500
+     },
+     {
+        "id": 28,
+        "month": "MAY",
+        "year" : 2026,
+        "sessions": 12430
+    },
+    {
+        "id": 29,
+        "month": "JUNE",
+        "year" : 2026,
+        "sessions": 33100
+    },
+    {
+        "id": 30,
+        "month": "JULY",
+        "year" : 2026,
+        "sessions": 10300
+    },
+    {
+        "id": 31,
+        "month": "AUG",
+        "year" : 2026,
+        "sessions": 8560
+    },
+    {
+        "id": 32,
+        "month": "SEPT",
+        "year" : 2026,
+        "sessions": 23100
+    },
+    {
+        "id": 33,
+        "month": "OCT",
+        "year" : 2026,
+        "sessions": 14200
+    },
+     {
+        "id": 34,
+        "month": "NOV",
+        "year" : 2026,
+        "sessions": 16100
+    },
+    {
+        "id": 35,
+        "month": "DEC",
+        "year" : 2026,
+        "sessions": 32500
+    },
+    
+     {
+        "id": 36,
+        "month": "JAN",
+        "year" : 2027,
+        "sessions": 24400
+    },
+    {
+        "id": 37,
+        "month": "FEB",
+        "year" : 2027,
+        "sessions": 31110
+    },
+     {
+        "id": 38,
+        "month": "MAR",
+        "year" : 2027,
+        "sessions": 20900
+    },
+    {
+        "id": 39,
+        "month": "APRIL",
+        "year" : 2027,
+        "sessions": 21500
+     },
+     {
+        "id": 40,
+        "month": "MAY",
+        "year" : 2027,
+        "sessions": 15720
+    },
+    {
+        "id": 41,
+        "month": "JUNE",
+        "year" : 2027,
+        "sessions": 12100
+    },
+    {
+        "id": 42,
+        "month": "JULY",
+        "year" : 2027,
+        "sessions": 9900
+    },
+    {
+        "id": 43,
+        "month": "AUG",
+        "year" : 2027,
+        "sessions": 11580
+    },
+    {
+        "id": 44,
+        "month": "SEPT",
+        "year" : 2027,
+        "sessions": 26400
+    },
+    {
+        "id": 45,
+        "month": "OCT",
+        "year" : 2027,
+        "sessions": 18900
+    },
+     {
+        "id": 46,
+        "month": "NOV",
+        "year" : 2027,
+        "sessions": 15700
+    },
+    {
+        "id": 47,
+        "month": "DEC",
+        "year" : 2027,
+        "sessions": 22800
+    }
+]
+

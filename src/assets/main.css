@@ -1,0 +1,795 @@
+@import './base.css';
+@import 'tailwindcss';
+
+#app {
+  min-width: 98%;
+  padding: 1rem 1rem;
+  font-weight: normal;
+}
+
+.outer-container {
+  position: relative;
+  border-radius: 12px;
+  height: 88px;
+  width: 95%
+}
+
+.header-inner-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  width: 98%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  color: white;
+  justify-content: flex-start
+}
+
+.gradient-background {
+  background: linear-gradient(#2065e7, #083fa5);
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.accu-logo-area-inner {
+  display: flex;
+  justify-content: left;
+  min-width: 250px;
+}
+
+.accu-logo-area {
+  color: white;
+  justify-content: center;
+}
+
+.accu-logo {
+  font-family: Orbitron;
+  color: #fff;
+  font-size: 1.7em;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.logo-image {
+  float: left;
+  width: 145px;
+  margin-left: 10px
+}
+
+.logo-image-svg {
+  width: 35%;
+}
+
+.hamburger-nav {
+  display: none;
+}
+
+.hamburger-icon {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#hamburger-nav {
+  position: absolute;
+  top: 60px;
+  right: -25px;
+  width: 180px;
+  z-index: 100;
+  display: block;
+}
+
+#hamburger-dropdown {
+  color: white;
+  background: rgba(54, 154, 212, 0.95);
+  /*#369ad4;*/
+  text-align: left;
+  margin-right: 20px;
+  font-size: 1em;
+  border: 1px solid #72edfe;
+  padding: 10px;
+  display: block;
+}
+
+.input-container {
+  margin: auto;
+  width: 100%;
+}
+
+.time-period {
+  padding-bottom: 20px
+}
+
+.date-input {
+  background-color: #d4e9f8 !important;
+  background: #fff;
+  border: 1px solid #3126ab;
+  margin-top: -4px;
+  float: left;
+}
+
+.date-from-container {
+  float: left;
+}
+
+.date-to-container {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px
+}
+
+.date-to {
+  float: left;
+  margin-top: 4px;
+  margin-left: 20px
+}
+
+.btn-container {
+  float: left;
+  margin-left: 10px;
+  margin-top: -4px
+}
+
+.btn-spacer {
+  margin-top: 0;
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+  margin: 50px 20px 20px 20px
+}
+
+.sidebar-box {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background: #efefef;
+  float: left;
+  width: 240px;
+  max-width: 200px;
+  height: 260px;
+  position: relative
+}
+
+#left-nav {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+#left-nav ul>li {
+  cursor: pointer;
+  padding: 0px 10px 0 0px;
+  vertical-align: top;
+}
+
+#left-nav ul>li span:hover {
+  color: rgb(2, 128, 178);
+}
+
+.inactive-nav-item {
+  color: #5a5959;
+  background: #e3e3e3;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.active-nav-item {
+  background: #05a2f7;
+  padding-left: 20px;
+}
+
+.active-caret-style {
+  color: #05a2f7;
+  font-size: 1.3em;
+}
+
+.inactive-caret-style {
+  color: #9ab0d3;
+  font-size: 1.3em;
+}
+
+.greyout-caret-style {
+  color: #cac8c8;
+  font-size: 1.3em;
+}
+
+.sidebar-blue-accent {
+  background-color: #1a5bd6;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 12px;
+  width: 100%
+}
+
+.sidebar-blue-accent2 {
+  background-color: #1ad6cd;
+  height: 2px;
+  width: 100%
+}
+
+.sidebar-clear {
+  display: none;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  justify-content: center;
+  width: 70%;
+  margin: 50px 20px 20px 20px
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: left;
+  width: 70%;
+  margin: 20px 20px 20px 20px
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  width: 70%;
+  margin: 30px 20px 20px 20px
+}
+
+.pie-chart {
+  margin-left: 30px;
+}
+
+.detail-container {
+  width: 70%;
+  margin: 50px 20px 20px 20px
+}
+
+.main-card {
+  width: 100%;
+}
+
+.mid-box-style {
+  color: #fff;
+  padding: 15px;
+  width: 30%;
+  min-width: 200px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  float: left;
+  height: 110px;
+  text-align: left;
+  font-size: x-large;
+  text-align: center;
+}
+
+.hr-inset {
+  border-style: inset;
+  border-width: 1.5px;
+  border-color: rgba(133, 170, 240, 0.5);
+  width: 96%;
+  margin-left: 20px;
+}
+
+.right-menu-items {
+  color: white;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 1.25em;
+}
+
+.top-tab {
+  height: 88px;
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+th {
+  cursor: pointer;
+  padding-bottom: 6px;
+}
+
+.accurate-logo {
+  cursor: pointer;
+}
+
+.top-nav-item {
+  padding: 0 6px 0 20px;
+}
+
+.big-box-style {
+  background: #efefef;
+  color: #fff;
+  padding: 15px;
+  width: 50%;
+  min-width: 200px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  float: left;
+  height: 420px;
+  text-align: left;
+  font-size: x-large;
+  text-align: center;
+  color: #444;
+}
+
+.gradient-background-pink {
+  background: linear-gradient(#b450d0, #903aa7);
+}
+
+.gradient-background-purple {
+  background: linear-gradient(#4d22a9, #360f88);
+}
+
+.gradient-background-blue {
+  background: linear-gradient(#5143ca, #3126ab);
+}
+
+.detail-main-card {
+  background: #efefef;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  float: left;
+  text-align: left;
+  font-size: x-large;
+  text-align: center;
+  color: #444;
+}
+
+@media (max-width: 1235px) {
+  .accurate-logo {
+    margin-bottom: 20px;
+  }
+
+  .top-nav-item {
+    font-size: medium;
+  }
+
+  .top-menu {
+    margin-right: 12px;
+    font-size: .75em
+  }
+
+  .detail-container {
+    width: 70%;
+    margin: 50px 20px 20px 10px
+  }
+
+  .main-card {
+    margin: auto;
+    margin-left: 40px;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .accu-logo {
+    font-size: 1.4em !important;
+  }
+
+  .accurate-logo {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top-nav-item {
+    display: none;
+  }
+
+  .top-menu {
+    margin-right: 12px;
+    font-size: .75em;
+    width: 150px;
+  }
+
+  .icons {
+    max-width: 150px;
+  }
+
+  .mid-box-style {
+    padding: 10px;
+    min-width: 180px;
+  }
+
+  .row1 {
+    width: 70%;
+    margin: 50px 10px 20px 40px;
+    float: left !important;
+  }
+
+  .row2 {
+    width: 70%;
+    margin: 0px 20px 20px 30px;
+    float: left !important;
+  }
+
+  .row3 {
+    margin: 0px 20px 20px 30px;
+  }
+
+  .big-box-style {
+    min-width: 130px;
+  }
+
+  .detail-container {
+    width: 70%;
+    margin: auto;
+  }
+
+  .main-card {
+    margin: auto;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin: 20px 0px 0px 20px;
+  }
+
+  .sidebar-box {
+    width: 80%;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+  }
+
+  .sidebar-clear {
+    display: block;
+    clear: both;
+    padding-top: 10px
+  }
+
+  .sidebar-blue-accent,
+  .sidebar-blue-accent2 {
+    display: none;
+  }
+
+  #left-nav {
+    padding: 0px;
+    width: 700px;
+  }
+
+  #left-nav ul>li {
+    display: inline-block;
+  }
+
+  .inactive-nav-item {
+    background: #efeded;
+  }
+
+  .row1 {
+    width: 96%;
+    float: left;
+    margin: 40px 0px 20px 20px;
+  }
+
+  .row2 {
+    width: 96%;
+    float: left;
+    margin: 10px 0px 20px 20px;
+  }
+
+  .row3 {
+    width: 96%;
+    float: left;
+    margin: 10px 0px 20px 20px;
+  }
+
+  .hamburger-icon {
+    display: block !important;
+    color: #fff;
+    font-size: 1.5em;
+    z-index: 1001;
+  }
+
+  .accu-logo-area {
+    margin-right: 140px;
+    margin-bottom: 30px
+  }
+
+  .top-nav-item {
+    display: none;
+    width: 100px
+  }
+
+  .top-menu {
+    margin-right: 12px;
+    font-size: .75em;
+    width: 150px;
+  }
+
+  .icons {
+    max-width: 150px;
+    display: none;
+  }
+
+  .detail-container {
+    width: 96%;
+    margin: auto;
+  }
+
+  .detail-main-card {
+    width: 96%;
+    margin: auto;
+  }
+
+  .main-card {
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  .outer-container {
+    width: 98%;
+  }
+}
+
+@media (max-width: 850px) {
+  .detail-main-card {
+    width: 95%;
+  }
+}
+
+@media (max-width: 780px) {
+  #app {
+    max-width: 760px;
+  }
+
+  .outer-container {
+    min-width: 670px;
+  }
+
+  .accu-logo {
+    font-size: 1.5em !important;
+  }
+
+  .accurate-logo {
+    float: right;
+    margin-right: 60px;
+    margin-top: 0px;
+    width: 45%;
+  }
+
+  .hamburger-icon {
+    top: 25px;
+  }
+
+  .mid-box-style {
+    padding: 10px;
+    min-width: 180px;
+    height: 90px;
+    font-size: 1.4em;
+  }
+
+  .sidebar {
+    margin: 0px 20px 20px 20px;
+  }
+
+  .sidebar-box {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .detail-container {
+    width: 98%;
+    margin: 50px 10px 20px 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .outer-container {
+    width: 600px;
+  }
+
+  .header-inner-container {
+    top: 0px;
+  }
+
+  .accurate-logo {
+    float: right;
+    margin-right: 60px;
+    margin-top: 20px;
+    width: 45%;
+  }
+
+  .accu-logo {
+    padding-top: 30px;
+  }
+
+  .logo-image {
+    margin-top: 20px
+  }
+}
+
+@media (max-width: 450px) {
+  .btn-spacer {
+    margin-top: 20px !important;
+    float: right;
+  }
+
+  .btn-container {
+    margin-left: 50px;
+    float: left;
+  }
+
+  #app {
+    max-width: 420px;
+  }
+
+  .outer-container {
+    width: 375px;
+    min-width: 375px;
+    height: 120px;
+  }
+
+  .flex-container {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .accu-logo {
+    padding-top: 10px;
+  }
+
+  .accurate-logo {
+    width: 90%;
+    margin-right: 40px;
+    padding-left: 10px;
+    margin-top: 25px;
+  }
+
+  .logo-image {
+    margin-top: 20px;
+    width: 185px;
+  }
+
+  .logo-image-svg {
+    width: 55%;
+  }
+
+  .sidebar {
+    margin: 0px 20px 20px 20px;
+  }
+
+  #left-nav {
+    width: 360px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .row1 {
+    clear: both;
+    margin: 40px 0px 20px 20px;
+    display: block;
+    width: 340px;
+  }
+
+  .row2,
+  .row3 {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+
+  .date-to-container {
+    margin-left: 0px
+  }
+
+  .date-to {
+    margin-left: 20px
+  }
+
+  .time-period {
+    padding-bottom: 2px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: #2871cb;
+    display: none;
+  }
+
+  .date-input {
+    margin-top: 10px;
+    min-width: 240px;
+  }
+
+  .mid-box-style {
+    min-width: 140px;
+    font-size: 1.1em;
+    height: 76px;
+    float: left;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-left: 30px
+  }
+
+  .mid-box-style-alt {
+    min-width: 140px;
+    height: 76px;
+    float: none;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .big-box-style {
+    min-width: 345px;
+    float: none;
+    margin: auto;
+  }
+
+  .break-row {
+    clear: both;
+    height: 30px;
+  }
+
+  #usersTable tr>*:nth-child(3) {
+    display: none;
+  }
+
+  .detail-main-card {
+    width: 95%;
+    min-width: 340px;
+  }
+}
+
+@media (max-width: 380px) {
+  #app {
+    padding: .5rem .5rem;
+  }
+
+  .outer-container {
+    width: 360px;
+    min-width: 360px;
+  }
+
+  .sidebar {
+    margin: 0px 20px 20px 0px;
+  }
+
+  .main-card {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .mid-box-style {
+    min-width: 130px;
+  }
+
+  .mid-box-style-alt {
+    min-width: 130px;
+  }
+
+  .row1 {
+    margin: 40px 0px 20px 0px;
+  }
+
+  .row2 {
+    width: 100%;
+  }
+
+}

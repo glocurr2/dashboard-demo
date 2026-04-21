@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "country": "United States",
+        "sessions": 8500
+    },
+    {
+        "id": 2,
+        "country": "Canada",
+        "sessions": 1500
+    },
+    {
+        "id": 3,
+        "country": "United Kingdom",
+        "sessions": 1000
+    },
+    {
+        "id": 4,
+        "country": "Puerto Rico",
+        "sessions": 300
+    },
+    {
+        "id": 5,
+        "country": "Other",
+        "sessions": 170
+    }
+]
