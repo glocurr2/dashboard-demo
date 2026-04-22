@@ -29,7 +29,7 @@
           <div class="btn-container">
             <button
               @click="
-                (triggerLineUpdate(), triggerPieUpdate(), updateUserData())
+                (triggerLineUpdate(), triggerPieUpdate(), updateMetricData())
               "
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded btn-spacer"
             >
@@ -41,18 +41,21 @@
       </div>
 
       <div class="row2">
-        <div class="gradient-background-pink mid-box-style">
-          Total Users:<br />
-          {{ totalUsers }}K
-        </div>
-        <div class="gradient-background-purple mid-box-style">
-          New Users:<br />
-          {{ newUsers }}K
-        </div>
-        <div class="gradient-background-blue mid-box-style mid-box-style-alt">
-          Conversions:<br />
-          {{ conversions }}K
-        </div>
+        <MetricsBox
+          metricTitle="Total Users"
+          :metric="totalUsers"
+          gradientClasses="gradient-background-pink mid-box-style"
+        />
+        <MetricsBox
+          metricTitle="New Users"
+          :metric="newUsers"
+          gradientClasses="gradient-background-purple mid-box-style"
+        />
+        <MetricsBox
+          metricTitle="Conversions"
+          :metric="conversions"
+          gradientClasses="gradient-background-blue mid-box-style mid-box-style-alt"
+        />
       </div>
 
       <div class="row3">
@@ -68,6 +71,8 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useGetDates } from '@/use/useGetDates';
+import { useRandomFloat } from '@/use/useRandomFloat';
+import MetricsBox from '@/components/MetricsBox.vue';
 import Sidebar from '@/components/Sidebar.vue';
 import PieChart from '@/components/PieChart.vue';
 import LineChart from '@/components/LineChart.vue';
@@ -96,7 +101,7 @@ ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 const router = useRouter();
 
 const handleDetailEvent = () => {
-  router.push('/detail');
+  router.push('/user');
 };
 
 const lineRef = ref(null);
@@ -123,18 +128,14 @@ const triggerPieUpdate = () => {
   (pieRef.value as any).updatePieChart();
 };
 
-let conversions = ref(100.35);
-let newUsers = ref(54.04);
-let totalUsers = ref(82.35);
+const totalUsers = ref(82.35);
+const newUsers = ref(54.04);
+const conversions = ref(100.35);
 
-function randomFloat(min: number, max: number): number {
-  const str = (Math.random() * (max - min) + min).toFixed(2);
-  return parseFloat(str);
-}
-const updateUserData = () => {
-  conversions.value = randomFloat(80.35, 150.24);
-  newUsers.value = randomFloat(30.25, 55.24);
-  totalUsers.value = randomFloat(50.35, 100.15);
+const updateMetricData = () => {
+  totalUsers.value = useRandomFloat(50.35, 100.15);
+  newUsers.value = useRandomFloat(30.25, 55.24);
+  conversions.value = useRandomFloat(80.35, 150.24);
 };
 </script>
 <style scoped></style>
