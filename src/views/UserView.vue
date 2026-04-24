@@ -9,21 +9,21 @@
             <table style="width: 90%; font-size: 0.65em">
               <thead>
                 <tr>
-                  <th @click="sortBy('name')">
+                  <th @click="setCurrentSort('name')">
                     Name
                     <font-awesome-icon
                       :icon="['fas', 'sort']"
                       class="icon-sort"
                     />
                   </th>
-                  <th @click="sortBy('email')">
+                  <th @click="setCurrentSort('email')">
                     Email
                     <font-awesome-icon
                       :icon="['fas', 'sort']"
                       class="icon-sort"
                     />
                   </th>
-                  <th @click="sortBy('registrationDate')">
+                  <th @click="setCurrentSort('registrationDate')">
                     Registration Date
                     <font-awesome-icon
                       :icon="['fas', 'sort']"
@@ -33,13 +33,36 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="item in sortedItems" :key="item.id">
-                  <td>{{ item.name }}</td>
-                  <td>{{ item.email }}</td>
-                  <td>{{ item.registrationDate }}</td>
+                <tr v-for="item in displayedItems" :key="item.id">
+                  <td style="width: 33%">{{ item.name }}</td>
+                  <td style="width: 33%">{{ item.email }}</td>
+                  <td style="width: 33%">{{ item.registrationDate }}</td>
                 </tr>
               </tbody>
             </table>
+            <ul>
+              <li
+                v-for="n in pageNumbers"
+                :key="n"
+                style="
+                  display: inline-block;
+                  margin: auto;
+                  margin-bottom: 20px;
+                  padding: 5px;
+                  font-size: 0.75em;
+                  cursor: pointer;
+                  text-decoration: underline;
+                "
+              >
+                <span
+                  :id="n.toString()"
+                  class="page p-1"
+                  @click="setCurrentPage(n)"
+                >
+                  {{ n }}</span
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -64,36 +87,46 @@ const handleHomeEvent = () => {
 onMounted(() => {
   storeUsers.loadUsers();
 });
+
 const items = ref(storeUsers.itemsUsers);
-const sortColumn = ref();
-const sortDirection = ref('asc');
+const currentSortDir = ref('asc');
+const currentSort = ref();
+const currentPage = ref(1);
+const pageSize = ref(10);
 
-const sortedItems = computed(() => {
-  if (!sortColumn.value) {
-    return items.value;
-  }
-  return [...items.value].sort((a, b) => {
-    const aValue = a[sortColumn.value];
-    const bValue = b[sortColumn.value];
+function setCurrentSort(colName: string) {
+  currentSort.value = colName;
+}
+function setCurrentPage(curPage: number) {
+  currentPage.value = curPage;
+}
 
-    if (typeof aValue === 'string') {
-      return sortDirection.value === 'asc'
-        ? aValue.localeCompare(bValue)
-        : bValue.localeCompare(aValue);
-    } else {
-      return sortDirection.value === 'asc' ? aValue - bValue : bValue - aValue;
-    }
+const displayedItems = computed(() => {
+  const sorted = [...items.value].sort((a, b) => {
+    let modifier = currentSortDir.value === 'desc' ? -1 : 1;
+    return a[currentSort.value] > b[currentSort.value] ? modifier : -modifier;
   });
+
+  const start = (currentPage.value - 1) * pageSize.value;
+  return sorted.slice(start, start + pageSize.value);
 });
 
-const sortBy = (column: string) => {
-  if (sortColumn.value === column) {
-    sortDirection.value = sortDirection.value === 'asc' ? 'desc' : 'asc';
-  } else {
-    sortColumn.value = column;
-    sortDirection.value = 'asc';
+function numberOfPages() {
+  const numOfItems = items.value.length;
+  let numOfPages = numOfItems <= 10 ? 1 : numOfItems / 10;
+  if (numOfPages % 1 !== 0) {
+    numOfPages++;
+    numOfPages = parseInt(numOfPages.toString());
   }
-};
+  return numOfPages;
+}
+
+const start = 1;
+const end = numberOfPages();
+const pageNumbers: number[] = Array.from(
+  { length: end - start + 1 },
+  (_, i) => start + i,
+);
 </script>
 
 <style scoped>
@@ -107,7 +140,7 @@ const sortBy = (column: string) => {
 table {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 th {
   cursor: pointer;
@@ -120,5 +153,8 @@ td {
 }
 table tr:nth-child(even) {
   background-color: #e4e2dd;
+}
+.p-selected {
+  background-color: #a5dfff;
 }
 </style>

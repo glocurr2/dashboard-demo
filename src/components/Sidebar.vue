@@ -23,7 +23,7 @@
               :icon="['fa', 'square-poll-vertical']"
               :id="'users-caret'"
               :class="[
-                thisRoute.path !== '/detail'
+                thisRoute.path !== '/user'
                   ? 'inactive-caret-style'
                   : 'active-caret-style',
               ]"
