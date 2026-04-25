@@ -99,6 +99,7 @@ function setCurrentSort(colName: string) {
 }
 function setCurrentPage(curPage: number) {
   currentPage.value = curPage;
+  setPgHighlight(curPage.toString());
 }
 
 const displayedItems = computed(() => {
@@ -110,6 +111,14 @@ const displayedItems = computed(() => {
   const start = (currentPage.value - 1) * pageSize.value;
   return sorted.slice(start, start + pageSize.value);
 });
+
+function setPgHighlight(curPage: string) {
+  const items = document.querySelectorAll('.p-selected');
+  for (const item of items) {
+    item.classList.remove('p-selected');
+  }
+  document.getElementById(curPage)?.classList.add('p-selected');
+}
 
 function numberOfPages() {
   const numOfItems = items.value.length;
